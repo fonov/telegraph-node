@@ -1,2 +1,2 @@
 # telegraph-node
-Api Telegraph Node base on http://telegra.ph/api
+Api Telegraph Node base on [Telegraph API](http://telegra.ph/api)
