@@ -1,0 +1,11 @@
+{
+  "createAccount":"createAccount",
+  "editAccountInfo":"editAccountInfo",
+  "getAccountInfo":"getAccountInfo",
+  "revokeAccessToken":"revokeAccessToken",
+  "createPage":"createPage",
+  "editPage":"editPage",
+  "getPage":"getPage",
+  "getPageList":"getPageList",
+  "getViews":"getViews"
+}

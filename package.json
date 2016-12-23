@@ -1,8 +1,8 @@
 {
   "name": "telegraph-node",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Api Telegraph Node base on http://telegra.ph/api",
-  "main": "index.js",
+  "main": "./lib/telegraph.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
