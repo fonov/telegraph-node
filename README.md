@@ -10,15 +10,15 @@ const telegraph = require('telegraph-node')
 const ph = new telegraph()
 ```
 ## Method
-- [createAccount](#createAccount)
-- [editAccountInfo](#editAccountInfo)
-- [getAccountInfo](#getAccountInfo)
-- [revokeAccessToken](#revokeAccessToken)
-- [createPage](#createPage)
-- [editPage](#editPage)
-- [getPage](#getPage)
-- [getPageList](#getPageList)
-- [getViews](#getViews)
+- [createAccount](#createaccount)
+- [editAccountInfo](#editaccountinfo)
+- [getAccountInfo](#getaccountinfo)
+- [revokeAccessToken](#revokeaccesstoken)
+- [createPage](#createpage)
+- [editPage](#editpage)
+- [getPage](#getpage)
+- [getPageList](#getpagelist)
+- [getViews](#getviews)
 
 
 ## createAccount
