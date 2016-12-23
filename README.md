@@ -32,11 +32,11 @@ ph.createAccount('hi', {short_name: 'Sandbox', author_name: 'Fonov Sergei'}, (re
 ## editAccountInfo
 
 ```js
-ph.editAccountInfo(token, {
- short_name: 'Sandbox',
- author_name: 'Fonov Sergei'
+ ph.editAccountInfo('8ed37a4c957e027ecd0da58c3a53f8ae59cd23099e1bc72e664d8ad083b6', {
+     short_name: 'Sandbox', 
+     author_name: 'Fonov Sergei'
  }, (result) => {
- console.log(result)
+     console.log(result)
  })
 ```
 
@@ -52,7 +52,7 @@ ph.getAccountInfo(token, {}, (result) => {
 
 ```js
 ph.revokeAccessToken(token, (result) => {
-    console.log(result)
+   console.log(result)
 })
 ```
 

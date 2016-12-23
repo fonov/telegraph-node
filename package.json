@@ -1,6 +1,6 @@
 {
   "name": "telegraph-node",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Api Telegraph Node base on http://telegra.ph/api",
   "main": "./lib/telegraph.js",
   "scripts": {
@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/mounlion/telegraph-node/issues"
   },
-  "homepage": "https://github.com/mounlion/telegraph-node#readme"
+  "homepage": "https://github.com/mounlion/telegraph-node#readme",
+  "dependencies": {
+    "tiny_request": "latest"
+  }
 }
