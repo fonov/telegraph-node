@@ -1,7 +1,9 @@
 ## Telegraph Node Lib
 Api Telegraph Node base on [Telegraph API](http://telegra.ph/api)
-# New Version
+
+## New Version
 * Support Promise (Thank you **Николай Костюрин**) 
+
 ## Install
 ```bash
 npm install --save telegraph-node
