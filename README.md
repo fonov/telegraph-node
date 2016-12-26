@@ -1,5 +1,7 @@
 ## Telegraph Node Lib
 Api Telegraph Node base on [Telegraph API](http://telegra.ph/api)
+# New Version
+* Support Promise (Thank you **Николай Костюрин**) 
 ## Install
 ```bash
 npm install --save telegraph-node
@@ -24,8 +26,8 @@ const ph = new telegraph()
 ## createAccount
 
 ```js
-ph.createAccount('hi', {short_name: 'Sandbox', author_name: 'Fonov Sergei'}, (result) => {
-    console.log(result)
+ph.createAccount('hi', {short_name: 'Sandbox', author_name: 'Fonov Sergei'}).then((resulr) => {
+ console.log(result)
 })
 ```
 
@@ -35,15 +37,15 @@ ph.createAccount('hi', {short_name: 'Sandbox', author_name: 'Fonov Sergei'}, (re
  ph.editAccountInfo('8ed37a4c957e027ecd0da58c3a53f8ae59cd23099e1bc72e664d8ad083b6', {
      short_name: 'Sandbox', 
      author_name: 'Fonov Sergei'
- }, (result) => {
-     console.log(result)
- })
+ }).then((resulr) => {
+    console.log(result)
+   })
 ```
 
 ## getAccountInfo
 
 ```js
-ph.getAccountInfo(token, {}, (result) => {
+ph.getAccountInfo(token, {}).then((resulr) => {
  console.log(result)
 })
 ```
@@ -51,8 +53,8 @@ ph.getAccountInfo(token, {}, (result) => {
 ## revokeAccessToken
 
 ```js
-ph.revokeAccessToken(token, (result) => {
-   console.log(result)
+ph.revokeAccessToken(token).then((resulr) => {
+  console.log(result)
 })
 ```
 
@@ -61,8 +63,8 @@ ph.revokeAccessToken(token, (result) => {
 ```js
 ph.createPage(token, 'Fonov Sergei', [{tag: 'h1', children: ['Hello world!']}], {
     return_content: true
-}, (result) => {
-    console.log(result)
+}).then((resulr) => {
+ console.log(result)
 })
 ```
 
@@ -71,16 +73,16 @@ ph.createPage(token, 'Fonov Sergei', [{tag: 'h1', children: ['Hello world!']}], 
 ```js
 ph.editPage(token, 'Fonov-Sergei-12-23', 'Fonov Sergei', [{tag: 'h3', children: ['Hello world!']}], {
     return_content: true
-}, (result) => {
-    console.log(result)
+}).then((resulr) => {
+ console.log(result)
 })
 ```
 
 ## getPage
 
 ```js
-ph.getPage('Fonov-Sergei-12-23', {return_content: true}, (result) => {
-    console.log(result)
+ph.getPage('Fonov-Sergei-12-23', {return_content: true}).then((resulr) => {
+   console.log(result)
 })
 ```
 
@@ -95,8 +97,8 @@ ph.getPageList(token, {}, (result) => {
 ## getViews
 
 ```js
-ph.getViews('Fonov-Sergei-12-23', {}, (result) => {
-    console.log(result)
+ph.getViews('Fonov-Sergei-12-23', {}).then((resulr) => {
+  console.log(result)
 })
 ```
 
