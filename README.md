@@ -28,7 +28,7 @@ const ph = new telegraph()
 ## createAccount
 
 ```js
-ph.createAccount('hi', {short_name: 'Sandbox', author_name: 'Fonov Sergei'}).then((resulr) => {
+ph.createAccount('hi', {short_name: 'Sandbox', author_name: 'Fonov Sergei'}).then((result) => {
  console.log(result)
 })
 ```
@@ -39,7 +39,7 @@ ph.createAccount('hi', {short_name: 'Sandbox', author_name: 'Fonov Sergei'}).the
  ph.editAccountInfo('8ed37a4c957e027ecd0da58c3a53f8ae59cd23099e1bc72e664d8ad083b6', {
      short_name: 'Sandbox', 
      author_name: 'Fonov Sergei'
- }).then((resulr) => {
+ }).then((result) => {
     console.log(result)
    })
 ```
@@ -47,7 +47,7 @@ ph.createAccount('hi', {short_name: 'Sandbox', author_name: 'Fonov Sergei'}).the
 ## getAccountInfo
 
 ```js
-ph.getAccountInfo(token, {}).then((resulr) => {
+ph.getAccountInfo(token, {}).then((result) => {
  console.log(result)
 })
 ```
@@ -55,7 +55,7 @@ ph.getAccountInfo(token, {}).then((resulr) => {
 ## revokeAccessToken
 
 ```js
-ph.revokeAccessToken(token).then((resulr) => {
+ph.revokeAccessToken(token).then((result) => {
   console.log(result)
 })
 ```
@@ -65,7 +65,7 @@ ph.revokeAccessToken(token).then((resulr) => {
 ```js
 ph.createPage(token, 'Fonov Sergei', [{tag: 'h1', children: ['Hello world!']}], {
     return_content: true
-}).then((resulr) => {
+}).then((result) => {
  console.log(result)
 })
 ```
@@ -75,7 +75,7 @@ ph.createPage(token, 'Fonov Sergei', [{tag: 'h1', children: ['Hello world!']}], 
 ```js
 ph.editPage(token, 'Fonov-Sergei-12-23', 'Fonov Sergei', [{tag: 'h3', children: ['Hello world!']}], {
     return_content: true
-}).then((resulr) => {
+}).then((result) => {
  console.log(result)
 })
 ```
@@ -83,7 +83,7 @@ ph.editPage(token, 'Fonov-Sergei-12-23', 'Fonov Sergei', [{tag: 'h3', children: 
 ## getPage
 
 ```js
-ph.getPage('Fonov-Sergei-12-23', {return_content: true}).then((resulr) => {
+ph.getPage('Fonov-Sergei-12-23', {return_content: true}).then((result) => {
    console.log(result)
 })
 ```
@@ -99,7 +99,7 @@ ph.getPageList(token, {}, (result) => {
 ## getViews
 
 ```js
-ph.getViews('Fonov-Sergei-12-23', {}).then((resulr) => {
+ph.getViews('Fonov-Sergei-12-23', {}).then((result) => {
   console.log(result)
 })
 ```
