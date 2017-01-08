@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/mounlion/telegraph-node#readme",
   "dependencies": {
-    "tiny_request": "latest"
+    "tiny_request": "latest",
+    "bluebird": "latest"
   }
 }
